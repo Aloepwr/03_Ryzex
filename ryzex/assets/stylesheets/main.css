@@ -1,0 +1,395 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+ 
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+
+
+/*
+  ========================================
+  Styles
+  ========================================
+*/
+body,
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: #000;
+	font: 300 14px/18px Tahoma, Verdana, Oswald, Lato, Helvetica, Arial, sans-serif;
+}
+strong {
+	font-weight: bold;
+}
+
+
+
+/*
+  ================================
+  Layout
+  ================================
+*/
+.wrapper {
+	margin: 0 auto;
+	background: #f0f0f0;
+}
+.layout {
+	padding: 5px 5px 0 5px;
+}
+  
+  
+  
+/*
+  ====================
+  Header
+  ====================
+*/
+header {
+	background: #7ac141;
+	border-top: 5px solid #2a8c15;
+	box-shadow: 1px 1px 15px #000;
+	margin-bottom: 10px;
+}
+.logo a {
+	float: left;
+	color: #231f20;
+	font-family: Oswald;
+	font-weight: normal;
+	font-size: 42px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	padding: 20px 10px 20px 10px;
+}
+.to-nav {
+	float: right;
+	color: #fff;
+	background: #195f28;
+	padding: 0 9px;
+	font-family: Oswald;
+	font-weight: normal;
+	font-size: 18px;
+	text-decoration: none;
+	line-height: 58px;
+	height: 58px;
+}
+.to-nav:hover,
+.to-nav:focus {
+	background: #000;
+}
+
+
+
+/*
+  ===================
+  Main section
+  ===================
+*/
+.main {
+	border-bottom: 2px solid #000;
+	margin-bottom: 15px;
+}
+.main label {
+	font: bold 11px/14px Tahoma;
+	display: block;
+	cursor: pointer;
+}
+.main select {
+	margin: 5px 0 7px 0;
+	padding: 1px 1px;
+	color: #888;
+	border: 1px solid #888;
+	width: 252px;
+}
+.table-section {
+	margin-top: 5px;
+	background: #fff;
+	border: 1px solid #a0a0a0;
+	padding: 10px 5px;
+	margin-bottom: 5px;
+}
+.table-section h4 {
+	font: bold 12px/14px Tahoma;
+	padding-bottom: 5px;
+	padding-left: 2px;
+}
+
+                             /*
+							 Как сделать главный чекбокс; 
+							 как сделать раздельный thead и tbody с границами;
+							 как сделать сворачивающиеся колонки;
+							 как сделать переключение по страницам?
+							 */
+
+table {
+	width: 100%;
+	margin-bottom: 10px;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+thead {
+	background: #7ac141;
+}
+th {
+	vertical-align: middle;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	font: bold 11px/16px Tahoma;
+	color: #fff;
+	padding: 5px 5px;
+}
+th:last-child {
+	border-right: 0;
+}
+th:nth-child(4) {
+	text-align: left;
+}
+td {
+	vertical-align: middle;
+	text-align: center;
+	border-bottom: 1px solid #7ac141;
+	border-right: 1px solid #7ac141;
+	font: normal 11px/14px Tahoma;
+	padding: 5px 5px;
+}
+td:first-child {
+  border-left: 1px solid #7ac141;
+}
+td:nth-child(4) {
+	text-align: left;
+}
+tbody tr:hover,
+tbody tr:focus {
+	background: #d8fabd;
+}
+
+.btn {
+	background: #000;
+	color: #fff;
+	padding: 3px 20px;
+	text-decoration: none;
+	font: bold 11px/14px Tahoma;
+	border-radius: 3px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.btn-delete {
+	background: #e37900;
+	background: rgb(227,121,0);
+	background: -moz-linear-gradient(top, rgb(227,121,0) 0%, rgb(241,111,92) 50%, rgb(246,41,12) 50%, rgb(204,62,0) 100%);
+	background: -webkit-linear-gradient(top, rgb(227,121,0) 0%, rgb(241,111,92) 50%, rgb(246,41,12) 50%, rgb(204,62,0) 100%);
+	background: -o-linear-gradient(top, rgb(227,121,0) 0%, rgb(241,111,92) 50%, rgb(246,41,12) 50%, rgb(204,62,0) 100%);
+	background: -ms-linear-gradient(top, rgb(227,121,0) 0%, rgb(241,111,92) 50%, rgb(246,41,12) 50%, rgb(204,62,0) 100%);
+	background: linear-gradient(to bottom, rgb(227,121,0) 0%, rgb(241,111,92) 50%, rgb(246,41,12) 50%, rgb(204,62,0) 100%);
+	margin-left: 153px;
+	cursor: pointer;
+}
+.btn-new {
+	background: #63ba41;
+	background: rgb(99,186,65);
+	background: -moz-linear-gradient(top, rgb(99,186,65) 0%, rgb(81,212,100) 50%, rgb(99,186,65) 50%, rgb(42,140,21) 100%);
+	background: -webkit-linear-gradient(top, rgb(99,186,65) 0%, rgb(81,212,100) 50%, rgb(99,186,65) 50%, rgb(42,140,21) 100%);
+	background: -o-linear-gradient(top, rgb(99,186,65) 0%, rgb(81,212,100) 50%, rgb(99,186,65) 50%, rgb(42,140,21) 100%);
+	background: -ms-linear-gradient(top, rgb(99,186,65) 0%, rgb(81,212,100) 50%, rgb(99,186,65) 50%, rgb(42,140,21) 100%);
+	background: linear-gradient(to bottom, rgb(99,186,65) 0%, rgb(81,212,100) 50%, rgb(99,186,65) 50%, rgb(42,140,21) 100%);
+	margin-right: 0;
+	cursor: pointer;
+}
+
+
+/*
+  ====================
+  Sidebar
+  ====================
+*/
+.sidebar {
+	border-bottom: 2px solid #000;
+}
+.sidebar h4 {
+	font: bold 12px/14px Tahoma;
+	margin-bottom: 10px;
+}
+.sidebar p {
+	font: 11px/14px Tahoma;
+	color: #cf0000;
+	margin-bottom: 10px;
+}
+.sendform label {
+	font: bold 11px/14px Tahoma;
+	display: block;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+.sendform input,
+.sendform select,
+.sendform textarea {
+	display: block;
+	border: 1px solid #888;
+	color: #888;
+	padding: 3px 3px;
+	margin-top: 3px;
+	width: 302px;
+}
+.sendform label:nth-child(5) input {
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+}
+.sendform label:nth-child(6) {
+	margin-bottom: 5px;
+}
+.sendform select {
+	width: 310px;
+	padding: 1px 0;
+}
+.sendform textarea {
+	height: 40px;
+}
+.sendform label:last-child span {
+	font-weight: normal;
+	vertical-align: middle;
+}
+.sendform label:last-child input {
+	background: #63ba41;
+	background: rgb(99,186,65);
+	background: -moz-linear-gradient(top, rgb(99,186,65) 0%, rgb(81,212,100) 50%, rgb(99,186,65) 50%, rgb(42,140,21) 100%);
+	background: -webkit-linear-gradient(top, rgb(99,186,65) 0%, rgb(81,212,100) 50%, rgb(99,186,65) 50%, rgb(42,140,21) 100%);
+	background: -o-linear-gradient(top, rgb(99,186,65) 0%, rgb(81,212,100) 50%, rgb(99,186,65) 50%, rgb(42,140,21) 100%);
+	background: -ms-linear-gradient(top, rgb(99,186,65) 0%, rgb(81,212,100) 50%, rgb(99,186,65) 50%, rgb(42,140,21) 100%);
+	background: linear-gradient(to bottom, rgb(99,186,65) 0%, rgb(81,212,100) 50%, rgb(99,186,65) 50%, rgb(42,140,21) 100%);
+	color: #fff;
+	padding: 3px 20px;
+	text-decoration: none;
+	font: bold 11px/14px Tahoma;
+	border-radius: 3px;
+	border: 0;
+	margin-left: 63px;
+	margin-top: 0;
+	width: auto;
+	float: right;
+}
+.sendform label:last-child {
+	display: inline-block;
+}
+
+
+
+/*
+  ====================
+  Footer
+  ====================
+*/
+footer {
+	padding: 0 5px 5px 5px;
+}
+.primary-nav {
+	background: #7ac141;
+}
+.primary-nav li a {
+	font: normal 14px/18px Oswald;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	display: block;
+	padding: 5px 0;
+	border-bottom: 1px solid #000;
+	text-align: center;
+}
+.primary-nav li a:hover,
+.primary-nav li a:focus {
+	color: #000;
+}
+.primary-nav li:last-child a {
+	border-bottom: 0;
+	background: #000;
+}
+.primary-nav li:last-child a:hover,
+.primary-nav li:last-child a:focus {
+	color: #7ac141;
+}
+
+.primary-nav ul {
+	display: none;
+	width: auto;
+	padding: 0 70px;
+	background: #63ba41;
+}
+.primary-nav ul li a {
+	font: normal 12px/14px Oswald;
+	color: #9f0;
+	padding: 5px 0;
+	text-align: center;
+	border-bottom: 1px solid #fff;
+}
+.primary-nav li:hover > ul {
+	display: block;
+}
+.primary-nav ul li:last-child a {
+	border-bottom: 0;
+	background: #63ba41;
+}
+.primary-nav ul li:last-child a:hover,
+.primary-nav ul li:last-child a:focus {
+	color: #000;
+}
